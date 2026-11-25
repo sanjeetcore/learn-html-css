@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Variables</title>
+        <style>
+            
+        :root{
+            --color: rgb(255, 0, 247);
+            --seccolor: rgb(231, 164, 246); 
+            --defpad: 23px;
+            --defop: 0.4;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .nav{
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child{
+            --color: rgb(243, 87, 8);
+            background-color: var(--color, blue);
+        }
+
+        .container{
+            background-color: var(--seccolor);
+        }
+            
+            
+            </style>
+    </head>
+    <body>
+        <div class=nav>
+           <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+              </ul>
+        </div>
+
+        <div class="container">
+            Sanjeet is an ambitious, curious, and technology-driven student pursuing a B.Tech in Computer Science
+             and Engineering (CSE) from Greater Noida Institute of Technology (GNIT), affiliated with Guru Gobind
+             Singh Indraprastha University (GGSIPU), Delhi. He has a keen interest in programming, problem-solving,
+              Data Structures and Algorithms (DSA) using Java, and Data Analytics. He is passionate about exploring 
+              new technologies and working on innovative projects, including Project PyroVision, an AI-based 
+              industrial fire detection and classification system. Beyond academics, he is continuously working on 
+              improving his communication skills, English speaking, public speaking, storytelling, and overall personality.
+               He believes in consistent learning, practical experience, and personal growth, with the goal of building a 
+               successful career in the technology industry.
+
+
+        </div>
+         
+            
+    </body>
+</html>
